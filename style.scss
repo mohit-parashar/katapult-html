@@ -1,0 +1,53 @@
+$primary-color: #e5158b;
+$secondary-color: #374966;
+
+@font-face {
+  font-family: FoundrySterling;
+  src: url('./fonts/FoundrySterling-Book.woff');
+}
+
+@font-face {
+  font-family: 'FoundrySterling Demi';
+  src: url('./fonts/FoundrySterling-Demi.woff');
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 1rem;
+  font-family: 'FoundrySterling', sans-serif; 
+}
+
+h1,h2,h3,h4{
+  font-family: 'FoundrySterling Demi', sans-serif;
+}
+@import 'mixins';
+@import 'common';
+
+
+// Screen Specific SCSS
+
+// Screen 1 Start
+
+.left-container{
+  padding: 40px 40px 20px;
+}
+.right-container{
+  background-color: $secondary-color;
+  color: #fff;
+  width: 100%;
+  padding: 20px 30px;
+  h2,h4{
+    color:inherit
+  }
+}
+
+.border-top{
+  border-top: 1px solid #e6edf3;
+}
+
+//Screen 1 End
